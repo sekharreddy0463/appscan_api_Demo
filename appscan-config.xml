@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Configuration>
   <Targets>
-    <Target path="build\libs\altoromutual.war">
-      <Exclude>com/ibm/security/appscan/Log4AltoroJ.class</Exclude>
-    </Target>
     <Target path="WebContent">
       <Exclude>WEB-INF/classes/com/ibm/security/appscan/altoromutual/api/AltoroAPI.class</Exclude>
       <Exclude>WEB-INF/classes/com/ibm/security/appscan/altoromutual/api/LoginAPI.class</Exclude>
@@ -13,6 +10,9 @@
       <Exclude>WEB-INF/classes/com/ibm/security/appscan/altoromutual/util/ServletUtil.class</Exclude>
       <Exclude>WEB-INF/classes/com/ibm/security/appscan/altoromutual/model/User.class</Exclude>
       <Exclude>WEB-INF/classes/com/ibm/security/appscan/altoromutual/model/Account.class</Exclude>
+    </Target>
+    <Target path="build\libs\altoromutual.war">
+      <Exclude>com/ibm/security/appscan/Log4AltoroJ.class</Exclude>
     </Target>
     <Target path="build\classes\main">
       <Exclude>com/ibm/security/appscan/altoromutual/model/User.class</Exclude>
