@@ -1,3 +1,15 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.com.hcl.security:appscan-gradle-plugin:1.0.3"
+  }
+}
+
+apply plugin: "com.hcl.security.appscan"
 apply plugin: 'war'
 
 webAppDirName = 'WebContent'
@@ -39,4 +51,11 @@ war {
 	archiveName 'altoromutual.war'
 	exclude 'WEB-INF/classes/**/*.class'
 	exclude 'WEB-INF/lib/**/*.jar'
+}
+
+appscanSettings {
+	irxName="altoroJGradleTest"
+	appscanKey="281c0100-e829-bfeb-a2e6-ed25ada5734e"
+	appscanSecret="nsWBe/c+Ay0JXq86ASNtAs9nRYrJ8bfxwhiq7X0p5cg="
+	appId="fd3a19e7-e2a2-4a45-afee-bd526722d2fd"
 }
