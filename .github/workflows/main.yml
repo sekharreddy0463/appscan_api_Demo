@@ -52,12 +52,12 @@ jobs:
       - name: Decompress
         uses: TonyBogdanov/zip@1.0
         with:
-          args: unzip -qq ./SAClientUtil.zip -d ./SAClientUtil
+          args: unzip -qq ./SAClientUtil.zip 
           
-      #- name: List files
-      #  run: ls SAClientUtil
+      - name: List files
+        run: ls SAClientUtil*/
       - name: Make AppScan executable
-        run: chmod +x /SAClientUtil/SAClientUtil*/bin/appscan.sh
+        run: chmod +x /SAClientUtil*/bin/appscan.sh
       - name: Run AppScan SAST Manually
-        run: /SAClientUtil/SAClientUtil*/bin/appscan.sh
+        run: /SAClientUtil*/bin/appscan.sh
         
