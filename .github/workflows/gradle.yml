@@ -26,3 +26,5 @@ jobs:
       run: ./gradlew build
     - name: Run SAST with AppScan
       run: ./gradlew appscan-analyze
+    - name: End run
+      run: echo "Congrats you ran AppScan"
