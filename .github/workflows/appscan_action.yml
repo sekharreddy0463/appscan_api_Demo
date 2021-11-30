@@ -1,3 +1,5 @@
+name: "AppScan CodeSweep" 
+
 on: [pull_request]
 jobs:
   scan:
