@@ -55,7 +55,7 @@ war {
 
 appscanSettings {
 	irxName="altoroJGradleTest"
-	appscanKey="281c0100-e829-bfeb-a2e6-ed25ada5734e"
-	appscanSecret="nsWBe/c+Ay0JXq86ASNtAs9nRYrJ8bfxwhiq7X0p5cg="
+	appscanKey="-------------------"
+	appscanSecret="----------------------"
 	appId="fd3a19e7-e2a2-4a45-afee-bd526722d2fd"
 }
