@@ -52,10 +52,3 @@ war {
 	exclude 'WEB-INF/classes/**/*.class'
 	exclude 'WEB-INF/lib/**/*.jar'
 }
-
-appscanSettings {
-	irxName="altoroJGradleTest"
-	appscanKey="-------------------"
-	appscanSecret="----------------------"
-	appId="fd3a19e7-e2a2-4a45-afee-bd526722d2fd"
-}
