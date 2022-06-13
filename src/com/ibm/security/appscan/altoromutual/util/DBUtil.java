@@ -200,7 +200,7 @@ public class DBUtil {
 		
 		Connection connection = getConnection();
 		Statement statement = connection.createStatement();
-		ResultSet resultSet =statement.executeQuery("SELECT FIRST_NAME,LAST_NAME,ROLE FROM PEOPLE WHERE USER_ID = '"+ usernames +"' "); /* BAD - user input should always be sanitized */
+		ResultSet resultSet =statement.executeQuery("SELECT FIRST_NAME,LAST_NAME,ROLE FROM PEOPLE WHERE USER_ID = '"+ username +"' "); /* BAD - user input should always be sanitized */
 
 		String firstName = null;
 		String lastName = null;
