@@ -2,8 +2,8 @@
 <Configuration>
   <Targets>
     <Target path=".">
-      <Exclude>api</Exclude>
-      <Exclude>model</Exclude>
+      <Exclude>api/</Exclude>
+      <Exclude>model/</Exclude>
     </Target>
   </Targets>
 </Configuration>
