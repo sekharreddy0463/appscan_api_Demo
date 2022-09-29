@@ -14,4 +14,3 @@ jobs:
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: ${{secrets.ASOC_APP}}
           wait_for_analysis: true
-          scan_build_outputs: true
