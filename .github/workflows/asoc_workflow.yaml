@@ -1,4 +1,4 @@
-name: "HCL AppScan Static Analyzer"
+name: "HCL AppScan On Cloud SAST"
 on:
   workflow_dispatch
 jobs:
