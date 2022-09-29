@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run AppScan Static Analyzer
-        uses: HCL-TECH-SOFTWARE/appscan-static-analyzer-action@v1
+        uses: HCL-TECH-SOFTWARE/appscan-static-analyzer-action@main
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
