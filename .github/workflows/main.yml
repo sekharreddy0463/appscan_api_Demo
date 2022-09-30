@@ -20,5 +20,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo $GITHUB_PATH
-          ls $GITHUB_PATH
+          cat $GITHUB_PATH/appscan-config.xml
           echo $HOME
