@@ -1,0 +1,16 @@
+name: "AppScan Source test"
+on:
+  workflow_dispatch
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run AppScan Static Analyzer
+        uses: coadaflorin/source-action@main
+        env:
+            AS_LICENSE_TYPE: 'CLS'
+            AS_LICENSE_SERVER_ID: ${{secrets.SERVER_ID}}
+            AS_LICENSE_SERVER: ${{secrets.LICENSE_SERVER}}
+            AS_INSTALL_MODE: 'standalone'
