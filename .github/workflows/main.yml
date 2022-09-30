@@ -20,4 +20,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo echo $GITHUB_PATH
+          echo ls $GITHUB_PATH
           echo echo $HOME
