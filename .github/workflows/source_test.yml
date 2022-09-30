@@ -16,5 +16,3 @@ jobs:
             AS_LICENSE_SERVER_ID: ${{secrets.SERVER_ID}}
             AS_LICENSE_SERVER: ${{secrets.LICENSE_SERVER}}
             AS_INSTALL_MODE: 'standalone'
-      - name: 'Quick check'
-        run: echo ${{GITHUB_PATH}} | echo 'home='${{HOME}
