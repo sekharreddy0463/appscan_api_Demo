@@ -24,6 +24,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: appscan-source-results
-          path: |
-            /github/workspace/.appscan_source/docker_scan_altoroJ.ozasmt
-            /github/workspace/.appscan_source/scan_report.pdf
+          path: /github/workspace/.appscan_source/
