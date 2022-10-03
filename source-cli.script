@@ -1,4 +1,5 @@
 login
 oa /github/workspace/AltoroJ.war 
-scan
+scan /github/workspace/.appscan_source/docker_scan_altoroJ.ozasmt
+report "OWASP Top 10 2021" pdf-summary /github/workspace/.appscan_source/scan_report.pdf
 quit
