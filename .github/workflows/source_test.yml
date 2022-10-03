@@ -1,4 +1,4 @@
-name: "AppScan Source test"
+name: "AppScan Source Action"
 on:
   workflow_dispatch
 jobs:
@@ -20,3 +20,10 @@ jobs:
             AS_LICENSE_SERVER_ID: ${{secrets.SERVER_ID}}
             AS_LICENSE_SERVER: ${{secrets.LICENSE_SERVER}}
             AS_INSTALL_MODE: 'standalone'
+      - name: Archive scan results
+        uses: actions/upload-artifact@v3
+        with:
+          name: appscan-source-results
+          path: |
+            /github/workspace/.appscan_source/docker_scan_altoroJ.ozasmt
+            /github/workspace/.appscan_source/scan_report.pdf
