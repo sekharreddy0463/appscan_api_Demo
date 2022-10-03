@@ -24,4 +24,11 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: appscan-source-results
-          path: /github/workspace/.appscan_source/
+          path: .appscan_source/
+      
+      - name: Check script file
+        run: |
+          ls
+          cd .appscan_source
+          ls
+        
