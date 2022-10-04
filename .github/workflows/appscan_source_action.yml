@@ -1,4 +1,4 @@
-name: "AppScan Source Action"
+name: "HCL AppScan Source Action"
 on:
   workflow_dispatch
 jobs:
@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         
-      - name: Run AppScan Static Analyzer
+      - name: Run AppScan Source scan
         uses: coadaflorin/source-action@10.0.8
         with:
           script-file: source-cli.script
