@@ -21,11 +21,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: appscan-source-results
-          path: .appscan_source/
-      
-      - name: Check script file
-        run: |
-          ls
-          cd .appscan_source
-          ls
-        
+          path: |
+            .appscan_source/docker_scan_altoroJ.ozasmt
+            .appscan_source/scan_report.pdf
+            
