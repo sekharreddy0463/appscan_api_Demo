@@ -59,8 +59,8 @@ public class LoginAPI extends AltoroAPI {
 		}
 
 		String username, password;
-		username = myJson.get("username").toString().toLowerCase();
-		password = myJson.get("password").toString().toLowerCase();
+		username = myJson.get("username").toString();
+		password = myJson.get("password").toString();
 
 		myJson.clear();
 		
